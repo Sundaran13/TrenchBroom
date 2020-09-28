@@ -17,25 +17,17 @@
  along with TrenchBroom. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "Assets/Texture.h"
-#include "IO/DiskFileSystem.h"
-#include "IO/DiskIO.h"
-#include "IO/ResourceUtils.h"
+#ifndef Catch2_h
+#define Catch2_h
 
-#include <memory>
+#include <vecmath/forward.h>
+#include <vecmath/bbox_io.h>
+#include <vecmath/line_io.h>
+#include <vecmath/mat_io.h>
+#include <vecmath/plane_io.h>
+#include <vecmath/ray_io.h>
+#include <vecmath/vec_io.h>
 
-#include "Catch2.h"
-#include "GTestCompat.h"
-#include "TestLogger.h"
+#include <catch2/catch.hpp>
 
-namespace TrenchBroom {
-    namespace IO {
-        TEST_CASE("ResourceUtilsTest.loadDefaultTexture", "[ResourceUtilsTest]") {
-            auto fs = std::make_shared<DiskFileSystem>(IO::Disk::getCurrentWorkingDir() + Path("fixture/test/IO/ResourceUtils/assets"));
-            NullLogger logger;
-            
-            auto texture = loadDefaultTexture(*fs, logger, "some_name");
-            ASSERT_EQ("some_name", texture.name());
-        }
-    }
-}
+#endif /* Catch2_h */
