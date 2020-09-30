@@ -411,6 +411,7 @@ set(COMMON_SOURCE
         ${COMMON_SOURCE_DIR}/View/RemoveBrushVerticesCommand.cpp
         ${COMMON_SOURCE_DIR}/View/RenderView.cpp
         ${COMMON_SOURCE_DIR}/View/ReparentNodesCommand.cpp
+        ${COMMON_SOURCE_DIR}/View/RepeatStack.cpp
         ${COMMON_SOURCE_DIR}/View/ReplaceTextureDialog.cpp
         ${COMMON_SOURCE_DIR}/View/ResizeBrushesCommand.cpp
         ${COMMON_SOURCE_DIR}/View/ResizeBrushesTool.cpp
@@ -962,6 +963,7 @@ set(COMMON_HEADER
         ${COMMON_SOURCE_DIR}/View/RemoveBrushVerticesCommand.h
         ${COMMON_SOURCE_DIR}/View/RenderView.h
         ${COMMON_SOURCE_DIR}/View/ReparentNodesCommand.h
+        ${COMMON_SOURCE_DIR}/View/RepeatStack.h
         ${COMMON_SOURCE_DIR}/View/ReplaceTextureDialog.h
         ${COMMON_SOURCE_DIR}/View/ResizeBrushesCommand.h
         ${COMMON_SOURCE_DIR}/View/ResizeBrushesTool.h
